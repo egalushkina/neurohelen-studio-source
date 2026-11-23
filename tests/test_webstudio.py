@@ -275,7 +275,7 @@ class BrowserTests(unittest.TestCase):
         body.update(speech=False)
         self.assertEqual(self.client.post('/api/recommend',json=body).json()['recommended'],'seedance')
         body.update(speech=True,language='en',seconds=15)
-        self.assertEqual(self.client.post('/api/recommend',json=body).json()['recommended'],'seedance')
+        self.assertEqual(self.client.post('/api/recommend',json=body).json()['recommended'],'omni')
         result=self.client.post('/api/start-recommended',json={**body,'route':'seedance'})
         self.assertEqual(result.status_code,200,result.text)
         p=self.app.store.project(result.json()['project']['id'])
