@@ -1,0 +1,10 @@
+.env
+.env.*
+.venv/
+runtime/
+__pycache__/
+*.pyc
+*.sqlite*
+*.db
+*service-account*.json
+*-config.json

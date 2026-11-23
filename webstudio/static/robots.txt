@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /studio
+Disallow: /api/
+Disallow: /media/
+Disallow: /*?
+Sitemap: https://studio.neurohelen.com/sitemap.xml
